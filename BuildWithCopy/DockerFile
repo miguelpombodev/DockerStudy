@@ -1,0 +1,5 @@
+FROM nginx
+LABEL maintainer "Usuário 1"
+
+RUN echo '<h1>Sem Conteúdo</h1>' > /usr/share/nginx/html/conteudo.html
+COPY *.html /usr/share/nginx/html
